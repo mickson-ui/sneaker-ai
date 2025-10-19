@@ -35,7 +35,7 @@ export function Upload(){
         setLoading(true)
 
         try{
-            const res = await fetch("http://localhost:8000/predict", {
+            const res = await fetch("https://sneaker-ai-backend.onrender.com/predict", {
                 method: "POST",
                 body: formData,
         })
